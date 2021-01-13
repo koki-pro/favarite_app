@@ -17,7 +17,7 @@
             <%= link_to recipe_favorites_path(@recipe), method: :post do %>
               <i class="far fa-heart"></i>
             <% end %>
-            <%= @recipe.favorites.count %>　
+            <%= @recipe.favorites.count %>
           <% end %>
           <% if @recipe.user == current_user %>
             <%= link_to '編集', edit_recipe_path(@recipe), class: "btn btn-success" %>
